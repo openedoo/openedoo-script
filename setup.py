@@ -1,5 +1,5 @@
 """
-Flask-Script
+Openedoo-Script
 --------------
 
 Flask support for writing external scripts.
@@ -14,7 +14,7 @@ Links
 import sys
 from setuptools import setup
 
-version='2.0.6'
+version='0.1.0'
 
 # Hack to prevent stupid TypeError: 'NoneType' object is not callable error on
 # exit of python setup.py test # in multiprocessing/util.py _exit_function when
@@ -28,17 +28,17 @@ except ImportError:
 install_requires = ['Flask']
 
 setup(
-    name='Flask-Script',
+    name='Openedoo-Script-Test',
     version=version,
-    url='http://github.com/smurfix/flask-script',
-	download_url = 'https://github.com/smurfix/flask-script/tarball/v'+version,
-    license='BSD',
-    author='Dan Jacob',
-    author_email='danjac354@gmail.com',
-    maintainer='Matthias Urlichs',
-    maintainer_email='matthias@urlichs.de',
+    url='https://github.com/openedoo/openedoo-script',
+	download_url = 'https://github.com/openedoo/openedoo-script/archive/master.zip',
+    license='MIT',
+    author='rendiya',
+    author_email='ligerrendy@gmail.com',
+    maintainer='rendiya',
+    maintainer_email='ligerrendy@gmail.com',
     description='Scripting support for Flask',
-    long_description=__doc__,
+    long_description='hello',
     packages=[
         'flask_script'
     ],

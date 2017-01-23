@@ -345,7 +345,7 @@ class Shell(Command):
         code.interact(self.banner, local=context)
 
 
-class Server(Command):
+class RunServer(Command):
     """
     Runs the Flask development server i.e. app.run()
 

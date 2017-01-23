@@ -15,10 +15,10 @@ from flask import Flask
 from flask._compat import text_type
 
 from ._compat import iteritems
-from .commands import Group, Option, Command, Server, Shell
+from .commands import Group, Option, Command, RunServer, Shell
 from .cli import prompt, prompt_pass, prompt_bool, prompt_choices
 
-__all__ = ["Command", "Shell", "Server", "Manager", "Group", "Option",
+__all__ = ["Command", "Shell", "RunServer", "Manager", "Group", "Option",
            "prompt", "prompt_pass", "prompt_bool", "prompt_choices"]
 
 safe_actions = (argparse._StoreAction,
@@ -100,8 +100,6 @@ class Manager(object):
 
         if "shell" not in self._commands:
             self.add_command("shell", Shell())
-        if "runserver" not in self._commands:
-            self.add_command("runserver", Server())
 
     def add_option(self, *args, **kwargs):
         """
