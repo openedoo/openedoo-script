@@ -1,0 +1,4 @@
+/dist
+*.pyc
+*.swp
+Openedoo_Script_Test.egg-info/

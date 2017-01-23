@@ -14,7 +14,7 @@ Links
 import sys
 from setuptools import setup
 
-version='0.1.0'
+version='0.1.2'
 
 # Hack to prevent stupid TypeError: 'NoneType' object is not callable error on
 # exit of python setup.py test # in multiprocessing/util.py _exit_function when
@@ -40,7 +40,7 @@ setup(
     description='Scripting support for Flask',
     long_description='hello',
     packages=[
-        'flask_script'
+        'openedoo_script'
     ],
     zip_safe=False,
     install_requires=install_requires,
